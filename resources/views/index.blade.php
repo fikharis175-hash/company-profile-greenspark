@@ -14,7 +14,7 @@
         }
 
         .hero-banner {
-            background-image: url('{{ asset("images/banner.jpg") }}');
+            background-image: url('{{ asset("images/main-banner.jpg") }}');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;

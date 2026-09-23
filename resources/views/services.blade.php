@@ -5,11 +5,15 @@
 @push('styles')
     <style>
         .hero-banner {
-            background-image: url('{{ asset("images/services-model.jpg") }}');
+            background-image: url('{{ asset("images/banner-service.jpg") }}');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             min-height: 80vh;
+        }
+
+        .hero-services {
+            background: linear-gradient(180deg, rgba(25, 135, 84, 0.15) 0%, rgba(33, 37, 41, 0) 100%);
         }
 
         .card-service {

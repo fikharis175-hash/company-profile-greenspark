@@ -5,7 +5,7 @@
 @push('styles')
     <style>
         .hero-banner {
-            background-image: url('{{ asset("images/GreenSpark-model.jpg") }}');
+            background-image: url('{{ asset("images/banner-about.jpg") }}');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;

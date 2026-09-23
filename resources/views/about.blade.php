@@ -49,45 +49,51 @@
         </div>
     </section>
 
-    <section class="py-5">
-        <div class="container text-center py-4">
-            <h2 class="text-white fw-bold mb-5">GreenSpark Principles</h2>
-            <div class="row g-5 justify-content-between">
-                <div class="col-md-5">
-                    <div class="card card-vision text-white p-4 p-md-5 border-0 rounded-4 shadow-lg hover-lift">
-                        <div class="card-body text-center">
-                            <h2 class="fw-bold mb-3">Berdaya dengan Energi Bersih</h2>
-                            <p class="fs-5 opacity-90 mb-0" style="max-width: 750px; margin: 0 auto; line-height: 1.8;">
+    <section class="py-5 bg-dark text-white">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <span class="badge bg-success-subtle text-success border border-success px-3 py-2 rounded-pill mb-2">Prinsip Kami</span>
+                <h2 class="display-6 fw-bold">Prinsip GreenSpark</h2>
+                <p class="text-secondary">Prinsip yang menjadi fondasi dalam setiap solusi yang kami hadirkan.</p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-6">
+                    <div class="card h-100 bg-warning-subtle border-secondary rounded-4 p-4 hover-lift">
+                        <div class="card-body p-2">
+                            <h3 class="fw-bold text-dark mb-3">Berdaya dengan Energi Bersih</h3>
+                            <p class="text-secondary mb-0" style="line-height: 1.7;">
                                 Kami percaya energi terbarukan adalah fondasi masa depan. Setiap panel surya yang kami pasang bukan sekadar teknologi, tetapi langkah nyata menuju dunia yang lebih hijau.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5">
-                    <div class="card card-vision text-white p-4 p-md-5 border-0 rounded-4 shadow-lg hover-lift">
-                        <div class="card-body text-center">
-                            <h2 class="fw-bold mb-3">Teknologi untuk Kehidupan</h2>
-                            <p class="fs-5 opacity-90 mb-0" style="max-width: 750px; margin: 0 auto; line-height: 1.8;">
+                <div class="col-md-6">
+                    <div class="card h-100 bg-success-subtle border-secondary rounded-4 p-4 hover-lift">
+                        <div class="card-body p-2">
+                            <h3 class="fw-bold text-dark mb-3">Teknologi untuk Kehidupan</h3>
+                            <p class="text-secondary mb-0" style="line-height: 1.7;">
                                 IoT dan sistem pintar bukan hanya perangkat, melainkan cara kami membantu Anda mengelola energi dengan lebih cerdas, efisien, dan transparan.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5">
-                    <div class="card card-vision text-white p-4 p-md-5 border-0 rounded-4 shadow-lg hover-lift">
-                        <div class="card-body text-center">
-                            <h2 class="fw-bold mb-3">Ramah Lingkungan, Ramah Bisnis</h2>
-                            <p class="fs-5 opacity-90 mb-0" style="max-width: 750px; margin: 0 auto; line-height: 1.8;">
+                <div class="col-md-6">
+                    <div class="card h-100 bg-danger-subtle border-secondary rounded-4 p-4 hover-lift">
+                        <div class="card-body p-2">
+                            <h3 class="fw-bold text-dark mb-3">Ramah Lingkungan, Ramah Bisnis</h3>
+                            <p class="text-secondary mb-0" style="line-height: 1.7;">
                                 Solusi kami dirancang agar bisnis Anda tumbuh tanpa mengorbankan bumi. Efisiensi energi berarti biaya lebih rendah dan dampak lingkungan lebih kecil.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5">
-                    <div class="card card-vision text-white p-4 p-md-5 border-0 rounded-4 shadow-lg hover-lift">
-                        <div class="card-body text-center">
-                            <h2 class="fw-bold mb-3">Kolaborasi Adalah Kekuatan</h2>
-                            <p class="fs-5 opacity-90 mb-0" style="max-width: 750px; margin: 0 auto; line-height: 1.8;">
+                <div class="col-md-6">
+                    <div class="card h-100 bg-info-subtle border-secondary rounded-4 p-4 hover-lift">
+                        <div class="card-body p-2">
+                            <h3 class="fw-bold text-dark mb-3">Kolaborasi Adalah Kekuatan</h3>
+                            <p class="text-secondary mb-0" style="line-height: 1.7;">
                                 Kami bekerja bersama klien, komunitas, dan mitra untuk menciptakan solusi yang relevan. Keberlanjutan hanya bisa dicapai dengan kerja sama.
                             </p>
                         </div>

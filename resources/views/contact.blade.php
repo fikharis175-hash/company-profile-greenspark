@@ -41,7 +41,7 @@
         }
 
         .form-control:focus {
-            border-color: #20c997 !important;
+            border-color: #fbfbfb !important;
             box-shadow: 0 0 0 0.25rem rgba(32, 201, 151, 0.25) !important;
         }
 
@@ -156,7 +156,7 @@
                                 <div class="col-md-6">
                                     <label for="name" class="form-label fw-semibold">Nama Lengkap <span class="text-danger">*</span></label>
                                     <input type="text" 
-                                           class="form-control form-control-lg @error('name') is-invalid @enderror" 
+                                           class="form-control form-control-lg text-light @error('name') is-invalid @enderror" 
                                            id="name" 
                                            name="name" 
                                            value="{{ old('name') }}" 
@@ -171,7 +171,7 @@
                                 <div class="col-md-6">
                                     <label for="email" class="form-label fw-semibold">Alamat Email <span class="text-danger">*</span></label>
                                     <input type="email" 
-                                           class="form-control form-control-lg @error('email') is-invalid @enderror" 
+                                           class="form-control form-control-lg text-light @error('email') is-invalid @enderror" 
                                            id="email" 
                                            name="email" 
                                            value="{{ old('email') }}" 
@@ -185,7 +185,7 @@
                                 
                                 <div class="col-12">
                                     <label for="message" class="form-label fw-semibold">Pesan <span class="text-danger">*</span></label>
-                                    <textarea class="form-control @error('message') is-invalid @enderror" 
+                                    <textarea class="form-control text-light @error('message') is-invalid @enderror" 
                                               id="message" 
                                               name="message" 
                                               rows="5" 

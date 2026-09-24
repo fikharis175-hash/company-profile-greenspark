@@ -28,7 +28,7 @@
     <header class="bg-dark p-4">
         <nav class="container-fluid px-4">
             <div class="d-flex flex-row justify-content-between align-items-center">
-                <a href="{{ route('home') }}" class="text-decoration-none text-success fw-bold fs-4 d-flex align-items-center gap-2"><img src="{{ asset('images/GreenSpark-logo.png') }}" alt="Logo" style="height: 30px;">GreenSpark</a>
+                <a href="{{ route('home') }}" class="text-decoration-none text-success fw-bold fs-4 d-flex align-items-center gap-2"><img src="{{ asset('images/logo.png') }}" alt="Logo" style="height: 42px; width: auto;">GreenSpark</a>
                 <div class="d-flex flex-row gap-4">
                     <a href="{{ route('home') }}" class="nav-link-custom {{ request()->routeIs('home') ? 'active' : '' }}">Home</a>
                     <a href="{{ route('about') }}" class="nav-link-custom {{ request()->routeIs('about') ? 'active' : '' }}">About</a>

@@ -15,7 +15,7 @@ class ContactController extends Controller
             'message' => 'required|string'
         ]);
 
-        Contacts::create($validated);
+        Contact::create($validated);
         return redirect()->route('contact')->with('success', 'Pesan anda berhasil terkirim.');
     }
 }

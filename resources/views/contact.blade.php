@@ -1,8 +1,8 @@
 @extends('layouts.app')
 @section('title', 'Contact Us - GreenSpark')
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 @push('styles')
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <style>
         :root {
             --brand-green: #198754;
@@ -27,12 +27,6 @@
             color: #ffffff;
         }
 
-        .contact-card {
-            border: none;
-            border-radius: 1rem;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-        }
-
         .form-control {
             background-color: #121714 !important;
             border: 1px solid #2d3831 !important;
@@ -40,8 +34,12 @@
             padding: 0.75rem 1rem;
         }
 
+        .form-control:-webkit-autofill {
+            filter: invert(1) hue-rotate(180deg);
+        }
+
         .form-control:focus {
-            border-color: #fbfbfb !important;
+            border-color: #20c997 !important;
             box-shadow: 0 0 0 0.25rem rgba(32, 201, 151, 0.25) !important;
         }
 

@@ -1,21 +1,30 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hubungi Kami - GreenSpark</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+@extends('layouts.app')
+@section('title', 'Contact Us - GreenSpark')
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+@push('styles')
     <style>
         :root {
             --brand-green: #198754;
             --brand-dark: #0f5132;
         }
 
-        .bg-brand-gradient {
-            background: linear-gradient(135deg, var(--brand-dark) 0%, var(--brand-green) 100%);
+        .hero-banner {
+            background-image: url('{{ asset("images/banner-contact.jpg") }}');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 80vh;
+        }
+
+        .hero-contact {
+            background: linear-gradient(180deg, rgba(25, 135, 84, 0.15) 0%, rgba(33, 37, 41, 0) 100%);
+        }
+
+        .contact-card-dark {
+            background-color: #1a231e !important;
+            border: 1px solid rgba(32, 201, 151, 0.2) !important;
+            color: #ffffff;
         }
 
         .contact-card {
@@ -24,9 +33,20 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
         }
 
+        .form-control {
+            background-color: #121714 !important;
+            border: 1px solid #2d3831 !important;
+            color: #ffffff;
+            padding: 0.75rem 1rem;
+        }
+
         .form-control:focus {
-            border-color: var(--brand-green);
-            box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
+            border-color: #20c997 !important;
+            box-shadow: 0 0 0 0.25rem rgba(32, 201, 151, 0.25) !important;
+        }
+
+        .form-control::placeholder {
+            color: #6c757d;
         }
 
         .btn-brand {
@@ -47,8 +67,8 @@
         .icon-box {
             width: 48px;
             height: 48px;
-            background-color: rgba(25, 135, 84, 0.1);
-            color: var(--brand-green);
+            background-color: rgba(32, 201, 151, 0.12);
+            color: #20c997;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -56,10 +76,11 @@
             font-size: 1.25rem;
         }
     </style>
-</head>
-<body class="bg-light">
+@endpush
 
-    <section class="bg-brand-gradient text-white py-5 text-center">
+@section('content')
+    
+    <section class="hero-contact text-white py-5 text-center">
         <div class="container py-4">
             <h1 class="fw-bold display-5">Hubungi GreenSpark</h1>
             <p class="lead opacity-75 mb-0">Mari berdiskusi tentang solusi energi terbarukan dan teknologi pintar untuk membantu bisnis Anda.</p>
@@ -71,7 +92,7 @@
             <div class="row g-4 justify-content-center">
 
                 <div class="col-lg-4">
-                    <div class="card contact-card h-100 p-4">
+                    <div class="card contact-card-dark h-100 p-4">
                         <h4 class="fw-bold text-success mb-4">Informasi Kontak</h4>
                         
                         <div class="d-flex align-items-start mb-4">
@@ -80,7 +101,7 @@
                             </div>
                             <div>
                                 <h6 class="fw-bold mb-1">Alamat Kantor</h6>
-                                <p class="text-muted small mb-0">GreenSpark HQ, Jl. Jendral Sudirman No. 45, Jakarta Selatan, 12190</p>
+                                <p class="text-light small mb-0">GreenSpark HQ, Jl. Jendral Sudirman No. 45, Jakarta Selatan, 12190</p>
                             </div>
                         </div>
 
@@ -90,7 +111,7 @@
                             </div>
                             <div>
                                 <h6 class="fw-bold mb-1">Email</h6>
-                                <p class="text-muted small mb-0">contact@greenspark.co.id</p>
+                                <p class="text-light small mb-0">contact@greenspark.co.id</p>
                             </div>
                         </div>
 
@@ -101,23 +122,23 @@
                             </div>
                             <div>
                                 <h6 class="fw-bold mb-1">Telepon</h6>
-                                <p class="text-muted small mb-0">(021) 555-8901</p>
+                                <p class="text-light small mb-0">(021) 555-8901</p>
                             </div>
                         </div>
 
-                        <hr class="my-3 text-muted opacity-25">
+                        <hr class="my-3 text-light opacity-25">
 
                         <div>
                             <h6 class="fw-bold mb-2"><i class="bi bi-clock me-2 text-success"></i>Jam Operasional</h6>
-                            <p class="text-muted small mb-0">Senin - Jumat: 08.00 - 17.00 WIB</p>
+                            <p class="text-light small mb-0">Senin - Jumat: 08.00 - 17.00 WIB</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-8">
-                    <div class="card contact-card p-4 p-md-5">
-                        <h3 class="fw-bold mb-2">Kirim Pesan</h3>
-                        <p class="text-muted mb-4">Isi formulir di bawah ini dan tim GreenSpark akan menghubungi Anda kembali segera.</p>
+                    <div class="card contact-card-dark p-4 p-md-5">
+                        <h3 class="fw-bold text-success mb-2">Kirim Pesan</h3>
+                        <p class="text-light mb-4">Isi formulir di bawah ini dan tim GreenSpark akan menghubungi Anda kembali segera.</p>
 
                         @if(session('success'))
                             <div class="alert alert-success alert-dismissible fade show d-flex align-items-center mb-4" role="alert">
@@ -192,6 +213,4 @@
     </section>
 
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+@endsection

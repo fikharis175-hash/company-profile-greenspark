@@ -77,7 +77,7 @@
                 <p class="lead opacity-75 mb-4 text-center text-light">GreenSpark menyediakan solusi energi terbarukan dan teknologi pintar. Mulai dari instalasi panel surya hingga manajemen energi berbasis IoT untuk membantu bisnis Anda tumbuh efisien dan ramah lingkungan.</p>
     
                 <div class="d-flex gap-2">
-                    <button class="btn btn-success">Lihat layanan kami</button>
+                    <a href="{{ route('services') }}" class="btn btn-success">Lihat layanan kami</a>
                 </div>
             </div>
         </div>
